@@ -105,9 +105,9 @@ So what is missing?
 
 ## Launching Redis 
 
-As we already eviced from the arrows in the right of *Real-time Rails* article a block is playing a relevant role: **Redis**. Redis is *an open-source in-memory data structure project implementing a distributed, in-memory key-value database with optional durability* (from [Wikipedia](https://en.wikipedia.org/wiki/Redis)). In order to support Rails 5.1 in PASE we built a 64-bits version of **redis-server** program that is distributed in the **\*BASE** option of PowerRuby (i.e. `/PowerRuby/oss` directory).
+As we already evinced from the arrows in the right of *Real-time Rails* article a new block is playing a relevant role: **Redis**. Redis is *an open-source in-memory data structure project implementing a distributed, in-memory key-value database with optional durability* (from [Wikipedia](https://en.wikipedia.org/wiki/Redis)). In order to support Rails 5.1 in PASE we built a 64-bits version of **redis-server** program that is distributed in the **\*BASE** option of PowerRuby (i.e. `/PowerRuby/oss` directory).
 
-Let us create a CL wrapper to submit Redis server in controlled way by our IBM i operating system.
+Let us create a CL wrapper to submit Redis server in a controlled way by our IBM i operating system.
 
 Let us edit the following CL source in a source file:
 
@@ -179,7 +179,7 @@ As soon as we created an Action Cable channel named WebEvents (that gets encoded
 
 ```
 
-As soon as the browser application is a subscriber to that channel, it will reveive notification of the event and will render it using jQuery manipulating the DOM.  
+As soon as the browser application is a subscriber to that channel, it will reveive notification of the event and will render it using jQuery manipulation of the DOM of our web page.  
 
 ## Understanding the code
 
@@ -193,7 +193,7 @@ If we look for details we get the files involved and a clear presentation of the
 
 <img src="images/files_involved.png" alt="ActionCable" width="900"/> 
 
-Once you identify the `disable_request_forgery_protection` setting you will be able to search the web for details on this aspect of ActionCable and            end up in identifying this [RAILSGUIDE](https://guides.rubyonrails.org/action_cable_overview.html#allowed-request-origins) on ActionCable. You are free to approach your study of Rails as you prefer. It is also possible to find formal training, but it  will be presumably focused on other platforms. It is up to you to adapt the knowledge you will acquire to IBM i and PowerRuby.
+Once you identify the `disable_request_forgery_protection` setting you will be able to search the web for details on this aspect of ActionCable and end up in identifying this [RAILSGUIDE](https://guides.rubyonrails.org/action_cable_overview.html#allowed-request-origins) on ActionCable. You are free to approach your study of Rails as you prefer. It is also possible to find formal training, but that will be presumably focused on other platforms of execution. It is up to you to adapt the knowledge you will acquire to IBM i and PowerRuby.
 
 In case you suspect issues in PowerRuby builds contact **support@powerruby.com**. 
 We are doing our best to help (or re-route requests) although this process could involve some time...
