@@ -179,7 +179,7 @@ As soon as we created an Action Cable channel named WebEvents (that gets encoded
 
 ```
 
-As soon as the browser application is a subscriber to that channel, it will reveive notification of the event and will render it using jQuery manipulation of the DOM of our web page.  
+As soon as the browser application is a subscriber to that channel, it will receive notification of the event and will render it using jQuery manipulation of the DOM of our web page.  
 
 ## Understanding the code
 
